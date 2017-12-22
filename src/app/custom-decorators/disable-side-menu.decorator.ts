@@ -9,7 +9,6 @@ export function DisableSideMenu() {
     return function (constructor) {
         const originalDidEnter = constructor.prototype.ionViewDidEnter;
         const originalDidLeave = constructor.prototype.ionViewDidLeave;
-        
 
         constructor.prototype.ionViewDidEnter = function () {
 
